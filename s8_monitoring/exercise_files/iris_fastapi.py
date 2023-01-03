@@ -1,6 +1,7 @@
-from fastapi import FastAPI
 import pickle
 from datetime import datetime
+
+from fastapi import FastAPI
 
 app = FastAPI()
 
@@ -29,6 +30,7 @@ def add_to_database(
 
 from fastapi import BackgroundTasks
 
+
 @app.post("/iris_v2/")
 async def iris_inference_v2(
     sepal_length: float,
@@ -45,12 +47,11 @@ async def iris_inference_v2(
 
     return {"prediction": classes[prediction], "prediction_int": prediction}
 
-from fastapi.responses import HTMLResponse
-
-from sklearn import datasets
-
+from evidently.metric_preset import (DataDriftPreset, DataQualityPreset,
+                                     TargetDriftPreset)
 from evidently.report import Report
-from evidently.metric_preset import DataDriftPreset, DataQualityPreset, TargetDriftPreset
+from fastapi.responses import HTMLResponse
+from sklearn import datasets
 
 
 @app.get("/iris_monitoring/", response_class=HTMLResponse)

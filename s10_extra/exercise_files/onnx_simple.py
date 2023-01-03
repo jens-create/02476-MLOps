@@ -1,11 +1,10 @@
 # imports
 
 import numpy
-from onnx import numpy_helper, TensorProto
-from onnx.helper import (
-    make_model, make_node, set_model_props, make_tensor,
-    make_graph, make_tensor_value_info)
+from onnx import TensorProto, numpy_helper
 from onnx.checker import check_model
+from onnx.helper import (make_graph, make_model, make_node, make_tensor,
+                         make_tensor_value_info, set_model_props)
 
 # inputs
 

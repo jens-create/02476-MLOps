@@ -1,12 +1,11 @@
 # Adjusted version of
 # https://github.com/Lightning-AI/lightning/blob/master/examples/pl_basics/backbone_image_classifier.py
 import torch
-from torch.nn import functional as F
-from torch.utils.data import DataLoader, random_split
-
 from pytorch_lightning import LightningDataModule, LightningModule
 from pytorch_lightning.cli import LightningCLI
 from pytorch_lightning.demos.mnist_datamodule import MNIST
+from torch.nn import functional as F
+from torch.utils.data import DataLoader, random_split
 from torchvision import transforms
 
 

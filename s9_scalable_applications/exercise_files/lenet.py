@@ -1,7 +1,8 @@
 import torch
-from torch import nn
 import torch.nn.functional as F
+from torch import nn
 from torch.nn.utils import prune
+
 
 class LeNet(nn.Module):
     def __init__(self):

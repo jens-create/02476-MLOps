@@ -1,13 +1,11 @@
 import pandas as pd
-
-from sklearn import datasets
-
-from evidently.test_suite import TestSuite
-from evidently.test_preset import DataStabilityTestPreset
-from evidently.tests import TestNumberOfMissingValues
-
+from evidently.metric_preset import (DataDriftPreset, DataQualityPreset,
+                                     TargetDriftPreset)
 from evidently.report import Report
-from evidently.metric_preset import DataDriftPreset, DataQualityPreset, TargetDriftPreset
+from evidently.test_preset import DataStabilityTestPreset
+from evidently.test_suite import TestSuite
+from evidently.tests import TestNumberOfMissingValues
+from sklearn import datasets
 
 iris_frame = datasets.load_iris(as_frame='auto').frame
 
