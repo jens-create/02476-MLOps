@@ -138,3 +138,11 @@ FashionMNIST/
 .vscode/settings.json
 /data
 .DS_Store
+
+
+#wandb
+s4_debugging_and_logging/exercise_files/wandb
+s4_debugging_and_logging/exercise_files/log
+
+
+datasets/MNIST/raw
