@@ -3,9 +3,6 @@ import torch
 from torch.utils.data import DataLoader, TensorDataset
 from torchvision import transforms
 
-# TODO: Fix dtypes of X
-# TODO TRANSFORM!
-
 
 def mnist():
     # exchange with the corrupted mnist dataset

@@ -146,3 +146,9 @@ s4_debugging_and_logging/exercise_files/log
 
 
 datasets/MNIST/raw
+
+
+s1_development_environment/exercise_files/final_exercises/*.*png
+s1_development_environment/exercise_files/final_exercise/orig_data.png
+
+s1_development_environment/exercise_files/final_exercise/**.png
